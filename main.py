@@ -115,3 +115,6 @@ if __name__ == '__main__':
 
 
 
+# export URL="a8d863a024cc2409dae221d70d0bf91f-1125826034.us-west-2.elb.amazonaws.com"
+# export TOKEN=`curl -d '{"email":"test@test.com","password":"test"}' -H "Content-Type: application/json" -X POST $URL/auth  | jq -r '.token'`
+# curl --request GET $URL:80/contents -H "Authorization: Bearer ${TOKEN}" | jq
