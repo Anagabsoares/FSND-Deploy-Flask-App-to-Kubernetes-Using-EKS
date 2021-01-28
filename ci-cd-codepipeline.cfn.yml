@@ -184,7 +184,7 @@ Resources:
           PolicyDocument:
             Version: 2012-10-17
             Statement:
-              - Resource: !Sub arn:aws:iam::${AWS::AccountId}:role/${KubectlRoleName}
+              - Resource: !Sub arn:aws:iam::${AWS::AccountId}:user/${KubectlRoleName}
                 Effect: Allow
                 Action:
                   - iam:GetRole
